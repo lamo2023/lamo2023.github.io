@@ -1,6 +1,8 @@
 
 <!-- saved from url=(0040)https://nicklashansen.github.io/modemrl/ -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html><head>
+  <link id="favicon" rel="icon" href="./Assets/icon.png" sizes="16x16">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title>LaMo 2023</title>
 	<meta property="og:title" content="LaMo">
 	<meta property="og:description" content="Unleashing the Power of Pre-trained Language Models for Offline Reinforcement Learning">
@@ -25,19 +27,20 @@
                 .ar94e88e2a9dhidden{ position:absolute !important; opacity:0 !important; pointer-events:none !important}
             </style></head>
 <body><div class="header" id="top">
-	 <h1><span style="font-weight: bolder;">U<span style="letter-spacing: -0px; font-weight: bolder;">n</span><img src="Assets/lightning.png" alt="logo" style="width: 25px; height: 50px; margin-right: -1px; margin-bottom: -10px;">eashing the Power of <br> Pre-trained Language Models for <br> Offline Reinforcement Learning</span></h1>
+	 <h1><img src="Assets/icon.png" alt="logo" style="width: 80px; height: 80px; margin-right: 20px; margin-bottom: -25px;"><span style="font-weight: bolder;">U<span style="letter-spacing: -0px; font-weight: bolder;">n</span><img src="Assets/lightning.png" alt="logo" style="width: 20px; height: 40px; margin-right: -1px; margin-bottom: -5px;">eashing the Power of Pre-trained Language Models <br> for Offline Reinforcement Learning</span></h1>
 					<h4>
 						<a class="nobreak">Anonymous</a><br>
 					</h4>
 </div>
 <div class="content">
-	<div class="question" style="text-align: center; font-size: 26px; font-style: italic; background-color: #dddddd; display: flex; justify-content: center; align-items: center; height: 16vh;">
-    Can we unleash the power of pre-trained LMs to solve <br> sequential decision-making problems?
+	<div class="question" style="text-align: center; font-size: 26px; font-style: italic; background-color: #dddddd; display: flex; justify-content: center; align-items: center;">
+    <br>
+    "Can we unleash the power of pre-trained LMs to solve <br> sequential decision-making problems?" <br> &ensp;
   </div>
 	<div>
-		<h2>Abstract</h2>
+		<h2>Overview</h2>
 		<p class="abstract">
-			Offline reinforcement learning (RL) aims to find a near-optimal policy using pre-collected datasets. In real-world scenarios, data collection could be costly and risky; therefore, offline RL becomes particularly challenging when the in-domain data is limited. Given recent advances in Large Language Models (LLMs) and their few-shot learning prowess, this paper introduces <span style="font-weight: bolder; color: #c03d3e;">La</span>nguage Models for <span style="font-weight: bolder; color: #c03d3e;">Mo</span>tion Control (<span style="font-weight: bolder; color: #c03d3e;">LaMo</span>), a general framework based on Decision Transformers to effectively use pre-trained Language Models (LMs) for offline RL. Our framework highlights four crucial components: (1)  Initializing Decision Transformers with sequentially pre-trained LMs, (2) employing the LoRA fine-tuning method, in contrast to full-weight fine-tuning, to combine the pre-trained knowledge from LMs and in-domain knowledge effectively, (3) using the non-linear MLP transformation instead of linear projections, to generate embeddings, and (4) integrating an auxiliary language prediction loss during fine-tuning to stabilize the LMs and retain their original abilities on languages. Empirical results indicate <span style="font-weight: bolder; color: #c03d3e;">LaMo</span> achieves state-of-the-art performance in sparse-reward tasks and closes the gap between value-based offline RL methods and decision transformers in dense-reward tasks. In particular, our method demonstrates superior performance in scenarios with limited data samples.
+			Offline reinforcement learning (RL) aims to find a near-optimal policy using pre-collected datasets. In real-world scenarios, data collection could be costly and risky; therefore, offline RL becomes particularly challenging when the in-domain data is limited. Given recent advances in Large Language Models (LLMs) and their few-shot learning prowess, this paper introduces <span style="font-weight: bolder; color: #c03d3e;">La</span>nguage Models for <span style="font-weight: bolder; color: #c03d3e;">Mo</span>tion Control (<span style="font-weight: bolder; color: #c03d3e;">LaMo</span>), a general framework based on Decision Transformers to effectively use pre-trained Language Models (LMs) for offline RL. Our framework highlights four crucial components: (1)  Initializing Decision Transformers with sequentially pre-trained LMs, (2) employing the LoRA fine-tuning method, in contrast to full-weight fine-tuning, to combine the pre-trained knowledge from LMs and in-domain knowledge effectively, (3) using the non-linear MLP transformation instead of linear projections, to generate embeddings, and (4) integrating an auxiliary language prediction loss during fine-tuning to stabilize the LMs and retain their original abilities on languages. Empirical results indicate <span style="font-weight: bolder; color: #c03d3e;">LaMo</span> achieves state-of-the-art performance in sparse-reward tasks and closes the gap between value-based offline RL methods and decision transformers in dense-reward tasks. In particular, our method demonstrates superior performance in scenarios with limited data samples. Below we show the average performance over different data ratios.
 		</p>
     <div class="figure" style="height: 256px; background-image: url('./Assets/teaser.png');"></div>
 	</div>
@@ -78,9 +81,6 @@
 			</p>
 		</div>
 		<div class="figure" style="height: 336px; background-image: url(Assets/method.png);"></div>
-	</div>
-	<div>
-		<span>Correspondence to <a href="https://nicklashansen.github.io/">Nicklas Hansen</a>. Website based on <a href="https://nicklashansen.github.io/td-mpc">TD-MPC</a> and <a href="https://nerfies.github.io/">Nerfies</a>.</span>
 	</div>
 </div>
 <footer>
